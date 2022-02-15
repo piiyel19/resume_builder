@@ -43,3 +43,6 @@ Route::get('/cv', 'App\Http\Controllers\Frame@cv')->name('cv');
 
 Route::get('/download_cv', 'App\Http\Controllers\Frame@download_cv')->name('download_cv');
 Route::get('/download_resume', 'App\Http\Controllers\Frame@download_resume')->name('download_resume');
+
+Route::get('/tips', 'App\Http\Controllers\Frame@tips')->name('tips');
+Route::get('/tips-details/{id}', 'App\Http\Controllers\Frame@tips_details')->name('tips_details');

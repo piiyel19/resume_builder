@@ -44,6 +44,9 @@
                       </a>
                         
                     </li>
+                    <li>
+                        <a href="<?= url('/')?>/tips"><i class="fa fa-info-circle"></i> Tips</a>
+                    </li>
                     <li <?php if(request()->segment(1)=='notification'){ echo 'class="active"'; }?>>
                         <a href="<?= url('/')?>/notification"><i class="fa fa-bell"></i> Notification</a>
                     </li>

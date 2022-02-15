@@ -17,6 +17,15 @@ class Frame extends Controller
     }
 
 
+    public function tips(){
+        return view('tips');
+    }
+
+    public function tips_details(){
+        return view('tips-details');
+    }
+
+
     public function form($id){
         return view('example-form');
     }
@@ -80,6 +89,8 @@ class Frame extends Controller
 
         $rand = date('Ymd');
         $dompdf->stream($label.'_'.$rand.'.pdf');
+
+        exit();
     }
 
 
@@ -111,6 +122,8 @@ class Frame extends Controller
 
         $rand = date('Ymd');
         $dompdf->stream($label.'_'.$rand.'.pdf');
+
+        exit();
     }
     
     
